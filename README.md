@@ -181,6 +181,57 @@ All timestamps inside the database are stored in UTC. For accurate daily, weekda
 
 ---
 
+### 🗺️ Meso & Macro Regional Zone Mapping Logic
+
+To group locations into regional zones, translate location addresses (using state abbreviations and ZIP code prefixes) to Macro and Meso regions according to these rules:
+
+#### 1. United States Groupings
+- **New England** (Macro: `Northeast USA`, Meso: `New England`): States `ME`, `NH`, `VT`, `MA`, `RI`, `CT`.
+- **New York**:
+  - **New York City & Long Island** (Macro: `Northeast USA`, Meso: `New York City / LI`): State `NY`, ZIP prefixes `100` to `119`.
+  - **Upstate New York** (Macro: `Northeast USA`, Meso: `Upstate New York`): State `NY`, ZIP prefixes `120` to `149`.
+- **New Jersey**:
+  - **North Jersey** (Macro: `Northeast USA`, Meso: `North Jersey`): State `NJ`, ZIP prefixes `070` to `079`, `088` to `089`.
+  - **South Jersey** (Macro: `Northeast USA`, Meso: `South Jersey`): State `NJ`, ZIP prefixes `080` to `087`.
+- **Pennsylvania**:
+  - **Eastern PA** (Macro: `Northeast USA`, Meso: `Eastern PA`): State `PA`, ZIP prefixes `170` to `196`.
+  - **Western PA** (Macro: `Northeast USA`, Meso: `Western PA`): State `PA`, ZIP prefixes `150` to `169`.
+- **Mid-Atlantic & Southeast**:
+  - **Capital Region** (Macro: `Mid-Atlantic & Southeast`, Meso: `Capital Region`): States `MD`, `DE`, `DC`, or State `VA` with ZIP prefixes `201`, `220` to `223`.
+  - **Virginia** (Macro: `Mid-Atlantic & Southeast`, Meso: `Virginia`): State `VA` (all other ZIP prefixes).
+  - **Carolinas** (Macro: `Mid-Atlantic & Southeast`, Meso: `Carolinas`): States `NC`, `SC`.
+  - **Georgia** (Macro: `Mid-Atlantic & Southeast`, Meso: `Georgia`): State `GA`.
+  - **Florida** (Macro: `Mid-Atlantic & Southeast`, Meso: `Florida`): State `FL`.
+- **Midwest USA**:
+  - **Ohio Valley** (Macro: `Midwest USA`, Meso: `Ohio Valley`): States `OH`, `IN`, `KY`, `WV`.
+  - **Michigan** (Macro: `Midwest USA`, Meso: `Michigan`): State `MI`.
+  - **Chicagoland** (Macro: `Midwest USA`, Meso: `Chicagoland`): State `IL`.
+  - **Upper Midwest** (Macro: `Midwest USA`, Meso: `Upper Midwest`): States `WI`, `MN`.
+- **South & Plains USA**:
+  - **Deep South** (Macro: `South & Plains USA`, Meso: `Deep South`): States `TN`, `AL`, `MS`.
+  - **South Central** (Macro: `South & Plains USA`, Meso: `South Central`): States `AR`, `LA`, `OK`.
+  - **Heartland** (Macro: `South & Plains USA`, Meso: `Heartland`): States `IA`, `MO`, `KS`, `NE`, `ND`, `SD`.
+  - **Texas** (Macro: `South & Plains USA`, Meso: `Texas`): State `TX`.
+- **Mountain & Southwest**:
+  - **Mountain** (Macro: `Mountain & Southwest`, Meso: `Mountain`): States `CO`, `UT`, `ID`, `MT`, `WY`.
+  - **Southwest** (Macro: `Mountain & Southwest`, Meso: `Southwest`): States `AZ`, `NM`, `NV`.
+- **West Coast USA**:
+  - **Northern California** (Macro: `West Coast USA`, Meso: `Northern California`): State `CA`, ZIP prefixes `936` to `961`.
+  - **Southern California** (Macro: `West Coast USA`, Meso: `Southern California`): State `CA` (all other ZIP prefixes).
+  - **Pacific Northwest** (Macro: `West Coast USA`, Meso: `Pacific Northwest`): States `WA`, `OR`.
+
+#### 2. Canada Groupings
+- **Canada East**:
+  - **Quebec** (Macro: `Canada East`, Meso: `Quebec`): State `QC` or postal code starting with `G`, `H`, `J`.
+  - **Ontario** (Macro: `Canada East`, Meso: `Ontario`): State `ON` or postal code starting with `K`, `L`, `M`, `N`, `P`.
+  - **Atlantic Canada** (Macro: `Canada East`, Meso: `Atlantic Canada`): States `NB`, `NS`, `PE`, `NL` or postal code starting with `A`, `B`, `C`, `E`.
+- **Canada West**:
+  - **Prairies** (Macro: `Canada West`, Meso: `Prairies`): States `MB`, `SK`, `AB` or postal code starting with `R`, `S`, `T`.
+  - **British Columbia** (Macro: `Canada West`, Meso: `British Columbia`): State `BC` or postal code starting with `V`.
+  - **Northern Canada** (Macro: `Canada West`, Meso: `Northern Canada`): States `YT`, `NT`, `NU` or postal code starting with `X`, `Y`.
+
+---
+
 ### 🔍 Core Calculation Queries
 
 Below are standard SQL queries and calculations to build the REST API endpoints:
