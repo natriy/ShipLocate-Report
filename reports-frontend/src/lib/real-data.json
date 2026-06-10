@@ -192,6 +192,73 @@
       }
     },
     {
+      "id": 1333,
+      "uniqueid": "1517 - INBOUND",
+      "date": "2026-06-05",
+      "month": "2026-06",
+      "dow": "Friday",
+      "total_spend": 3700.0,
+      "carrier": "Rig Logistics INC",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "spend_share": 3700.0,
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-08T16:00:00",
+          "planned_at": "2026-06-08T16:00:00",
+          "completed_at": "2026-06-08T19:42:34.497000",
+          "entered_at": "2026-06-08T17:56:27.796000",
+          "exited_at": "2026-06-08T19:03:33.118000",
+          "dwell_mins": 67
+        }
+      ],
+      "shippers": [
+        {
+          "name": "Southern Potato",
+          "address": "375 N Railway Ave, Winkler, MB R6W 4B4, Canada",
+          "state": "MB",
+          "city": "Winkler",
+          "zone": {
+            "macro": "H",
+            "macroName": "Canada West",
+            "meso": "H1",
+            "mesoName": "Prairies"
+          },
+          "stop_date": "2026-06-05T17:00:00",
+          "planned_at": "2026-06-05T17:00:00",
+          "completed_at": "2026-06-08T13:05:51.778000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "compliance": {
+        "path": "A_already_logged",
+        "has_phone": true,
+        "has_sms": true,
+        "already_logged": true,
+        "logged_in": true,
+        "accepted": true,
+        "driver_delivered": false,
+        "close_method": "office_manual",
+        "manual_close": true,
+        "never_app": false,
+        "sms_to_login_h": 0.36,
+        "sms_to_accept_h": 0.37
+      }
+    },
+    {
       "id": 424,
       "uniqueid": "11051",
       "date": "2026-02-18",
@@ -4349,6 +4416,73 @@
       }
     },
     {
+      "id": 1361,
+      "uniqueid": "1524 - INBOUND",
+      "date": "2026-06-08",
+      "month": "2026-06",
+      "dow": "Monday",
+      "total_spend": 800.0,
+      "carrier": "Transport AJIT",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "spend_share": 800.0,
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-09T11:00:00",
+          "planned_at": "2026-06-09T11:00:00",
+          "completed_at": null,
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "shippers": [
+        {
+          "name": "Hillside Gardens",
+          "address": "1383 River Rd, Bradford, ON L3Z 4A6, Canada",
+          "state": "ON",
+          "city": "Bradford",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G2",
+            "mesoName": "Ontario"
+          },
+          "stop_date": "2026-06-08T18:00:00",
+          "planned_at": "2026-06-08T18:00:00",
+          "completed_at": null,
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "compliance": {
+        "path": "C_sms_no_response",
+        "has_phone": true,
+        "has_sms": true,
+        "already_logged": false,
+        "logged_in": false,
+        "accepted": false,
+        "driver_delivered": false,
+        "close_method": "office_auto",
+        "manual_close": true,
+        "never_app": false,
+        "sms_to_login_h": null,
+        "sms_to_accept_h": null
+      }
+    },
+    {
       "id": 894,
       "uniqueid": "11502",
       "date": "2026-04-15",
@@ -5821,6 +5955,73 @@
       }
     },
     {
+      "id": 1302,
+      "uniqueid": "1504 - INBOUND",
+      "date": "2026-06-03",
+      "month": "2026-06",
+      "dow": "Wednesday",
+      "total_spend": 4750.0,
+      "carrier": "Groupe Robert",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "spend_share": 4750.0,
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-06T12:00:00",
+          "planned_at": "2026-06-06T12:00:00",
+          "completed_at": "2026-06-08T12:47:42.700000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "shippers": [
+        {
+          "name": "Willoughby Farm",
+          "address": "12899 Co Rd 8, Gordon, AL 36343, USA",
+          "state": "AL",
+          "city": "Gordon",
+          "zone": {
+            "macro": "D",
+            "macroName": "South & Plains USA",
+            "meso": "D1",
+            "mesoName": "Deep South"
+          },
+          "stop_date": "2026-06-03T19:00:00",
+          "planned_at": "2026-06-03T19:00:00",
+          "completed_at": "2026-06-05T13:27:04.464000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "compliance": {
+        "path": "C_sms_no_response",
+        "has_phone": true,
+        "has_sms": true,
+        "already_logged": false,
+        "logged_in": false,
+        "accepted": false,
+        "driver_delivered": false,
+        "close_method": "office_auto",
+        "manual_close": true,
+        "never_app": false,
+        "sms_to_login_h": null,
+        "sms_to_accept_h": null
+      }
+    },
+    {
       "id": 1277,
       "uniqueid": "11774",
       "date": "2026-05-30",
@@ -6353,6 +6554,73 @@
         "never_app": false,
         "sms_to_login_h": 6.15,
         "sms_to_accept_h": 6.36
+      }
+    },
+    {
+      "id": 1364,
+      "uniqueid": "11819",
+      "date": "2026-06-08",
+      "month": "2026-06",
+      "dow": "Monday",
+      "total_spend": 2000.0,
+      "carrier": "S & S Forwarding Ltd",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "Armata",
+          "address": "Hunts Point Terminal Market, Bronx, New York 10474, United States",
+          "spend_share": 2000.0,
+          "state": "NY",
+          "city": "Bronx",
+          "zone": {
+            "macro": "A",
+            "macroName": "Northeast USA",
+            "meso": "A2",
+            "mesoName": "New York City / LI"
+          },
+          "stop_date": "2026-06-09T02:00:00",
+          "planned_at": "2026-06-09T02:00:00",
+          "completed_at": null,
+          "entered_at": "2026-06-09T05:22:51.051000",
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "shippers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-08T20:00:00",
+          "planned_at": "2026-06-08T20:00:00",
+          "completed_at": "2026-06-09T01:56:32.365000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "compliance": {
+        "path": "B_sms_logged",
+        "has_phone": true,
+        "has_sms": true,
+        "already_logged": false,
+        "logged_in": true,
+        "accepted": true,
+        "driver_delivered": false,
+        "close_method": "office_manual",
+        "manual_close": true,
+        "never_app": false,
+        "sms_to_login_h": 5.99,
+        "sms_to_accept_h": 6.52
       }
     },
     {
@@ -9935,6 +10203,73 @@
         "driver_delivered": false,
         "close_method": "office_auto",
         "manual_close": true,
+        "never_app": false,
+        "sms_to_login_h": null,
+        "sms_to_accept_h": null
+      }
+    },
+    {
+      "id": 1349,
+      "uniqueid": "11811",
+      "date": "2026-06-07",
+      "month": "2026-06",
+      "dow": "Sunday",
+      "total_spend": 2200.0,
+      "carrier": "FMS Transport",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "FreshPoint",
+          "address": "105 Reserve Road, Hartford, Connecticut 06114, United States",
+          "spend_share": 2200.0,
+          "state": "CT",
+          "city": "Hartford",
+          "zone": {
+            "macro": "A",
+            "macroName": "Northeast USA",
+            "meso": "A1",
+            "mesoName": "New England"
+          },
+          "stop_date": "2026-06-08T11:00:00",
+          "planned_at": "2026-06-08T11:00:00",
+          "completed_at": "2026-06-08T12:01:41.548000",
+          "entered_at": "2026-06-08T00:48:31.113000",
+          "exited_at": null,
+          "dwell_mins": 61
+        }
+      ],
+      "shippers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-07T20:00:00",
+          "planned_at": "2026-06-07T20:00:00",
+          "completed_at": "2026-06-07T18:24:25.144000",
+          "entered_at": "2026-06-07T18:07:26.109000",
+          "exited_at": "2026-06-07T19:02:01.123000",
+          "dwell_mins": 0
+        }
+      ],
+      "compliance": {
+        "path": "A_already_logged",
+        "has_phone": true,
+        "has_sms": false,
+        "already_logged": true,
+        "logged_in": true,
+        "accepted": true,
+        "driver_delivered": true,
+        "close_method": "driver_self",
+        "manual_close": false,
         "never_app": false,
         "sms_to_login_h": null,
         "sms_to_accept_h": null
@@ -14340,11 +14675,11 @@
         }
       ],
       "compliance": {
-        "path": "D_no_driver",
+        "path": "B_sms_logged",
         "has_phone": true,
         "has_sms": false,
         "already_logged": false,
-        "logged_in": false,
+        "logged_in": true,
         "accepted": false,
         "driver_delivered": false,
         "close_method": "office_auto",
@@ -18344,6 +18679,73 @@
       }
     },
     {
+      "id": 1323,
+      "uniqueid": "1509 - INBOUND",
+      "date": "2026-06-04",
+      "month": "2026-06",
+      "dow": "Thursday",
+      "total_spend": 3000.0,
+      "carrier": "SPI",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "spend_share": 3000.0,
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-06T18:52:00",
+          "planned_at": "2026-06-06T18:52:00",
+          "completed_at": "2026-06-08T12:58:25.866000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "shippers": [
+        {
+          "name": "L M Compagnies",
+          "address": "778 Little Canal Rd, Pantego, NC 27860, USA",
+          "state": "NC",
+          "city": "Pantego",
+          "zone": {
+            "macro": "B",
+            "macroName": "Mid-Atlantic & Southeast",
+            "meso": "B3",
+            "mesoName": "Carolinas"
+          },
+          "stop_date": "2026-06-04T17:00:00",
+          "planned_at": "2026-06-04T17:00:00",
+          "completed_at": "2026-06-05T13:20:56.474000",
+          "entered_at": "2026-06-04T20:16:19.120000",
+          "exited_at": "2026-06-04T21:47:34.100000",
+          "dwell_mins": 91
+        }
+      ],
+      "compliance": {
+        "path": "B_sms_logged",
+        "has_phone": true,
+        "has_sms": true,
+        "already_logged": false,
+        "logged_in": true,
+        "accepted": true,
+        "driver_delivered": false,
+        "close_method": "office_manual",
+        "manual_close": true,
+        "never_app": false,
+        "sms_to_login_h": 0.29,
+        "sms_to_accept_h": 0.31
+      }
+    },
+    {
       "id": 939,
       "uniqueid": "11527",
       "date": "2026-04-21",
@@ -20396,6 +20798,130 @@
         "never_app": false,
         "sms_to_login_h": null,
         "sms_to_accept_h": null
+      }
+    },
+    {
+      "id": 1345,
+      "uniqueid": "11804",
+      "date": "2026-06-06",
+      "month": "2026-06",
+      "dow": "Saturday",
+      "total_spend": 1300.0,
+      "carrier": "Load Flow Trucklines",
+      "trip_type": "LTL",
+      "picks_count": 1,
+      "drops_count": 4,
+      "customers": [
+        {
+          "name": "Stronach & Sons (2020) Inc.",
+          "address": "165 The Queensway, Etobicoke, ON M8Y 1H8, Canada",
+          "spend_share": 325.0,
+          "state": "ON",
+          "city": "Etobicoke",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G2",
+            "mesoName": "Ontario"
+          },
+          "stop_date": "2026-06-07T10:00:00",
+          "planned_at": "2026-06-07T10:00:00",
+          "completed_at": null,
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        },
+        {
+          "name": "Streef Produce LTD-TORONTO",
+          "address": "165 The Queensway, Etobicoke, ON M8Y 1H8, Canada",
+          "spend_share": 325.0,
+          "state": "ON",
+          "city": "Etobicoke",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G2",
+            "mesoName": "Ontario"
+          },
+          "stop_date": "2026-06-07T11:00:00",
+          "planned_at": "2026-06-07T11:00:00",
+          "completed_at": null,
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        },
+        {
+          "name": "Oceans Fresh Food Maret",
+          "address": "3644 Wolfedale Rd, Mississauga, ON L5C 3E6, Canada",
+          "spend_share": 325.0,
+          "state": "ON",
+          "city": "Mississauga",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G2",
+            "mesoName": "Ontario"
+          },
+          "stop_date": "2026-06-07T14:00:00",
+          "planned_at": "2026-06-07T14:00:00",
+          "completed_at": null,
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        },
+        {
+          "name": "Hing Lee Fresh",
+          "address": "2201 Brimley Rd #1, Scarborough, ON M1S 4N7, Canada",
+          "spend_share": 325.0,
+          "state": "ON",
+          "city": "Scarborough",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G2",
+            "mesoName": "Ontario"
+          },
+          "stop_date": "2026-06-07T16:00:00",
+          "planned_at": "2026-06-07T16:00:00",
+          "completed_at": null,
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "shippers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-06T20:00:00",
+          "planned_at": "2026-06-06T20:00:00",
+          "completed_at": "2026-06-06T20:41:32.491000",
+          "entered_at": "2026-06-06T18:54:42.124000",
+          "exited_at": "2026-06-06T20:55:40.110000",
+          "dwell_mins": 55
+        }
+      ],
+      "compliance": {
+        "path": "B_sms_logged",
+        "has_phone": true,
+        "has_sms": true,
+        "already_logged": false,
+        "logged_in": true,
+        "accepted": true,
+        "driver_delivered": false,
+        "close_method": "office_manual",
+        "manual_close": true,
+        "never_app": false,
+        "sms_to_login_h": 0.13,
+        "sms_to_accept_h": 2.07
       }
     },
     {
@@ -23721,6 +24247,92 @@
         "never_app": false,
         "sms_to_login_h": 6.36,
         "sms_to_accept_h": 6.37
+      }
+    },
+    {
+      "id": 1348,
+      "uniqueid": "11810",
+      "date": "2026-06-07",
+      "month": "2026-06",
+      "dow": "Sunday",
+      "total_spend": 1900.0,
+      "carrier": "Transport VM",
+      "trip_type": "LTL",
+      "picks_count": 1,
+      "drops_count": 2,
+      "customers": [
+        {
+          "name": "Baldor",
+          "address": "130 Eastern Avenue, Chelsea, Massachusetts 02150, United States",
+          "spend_share": 950.0,
+          "state": "MA",
+          "city": "Chelsea",
+          "zone": {
+            "macro": "A",
+            "macroName": "Northeast USA",
+            "meso": "A1",
+            "mesoName": "New England"
+          },
+          "stop_date": "2026-06-05T11:00:00",
+          "planned_at": "2026-06-05T11:00:00",
+          "completed_at": "2026-06-08T13:49:33.527000",
+          "entered_at": "2026-06-08T03:01:06.105000",
+          "exited_at": "2026-06-08T13:41:26.111000",
+          "dwell_mins": 640
+        },
+        {
+          "name": "Carbonella",
+          "address": "50 E Industrial Rd, Branford, CT 06405, USA",
+          "spend_share": 950.0,
+          "state": "CT",
+          "city": "Branford",
+          "zone": {
+            "macro": "A",
+            "macroName": "Northeast USA",
+            "meso": "A1",
+            "mesoName": "New England"
+          },
+          "stop_date": "2026-06-08T15:00:00",
+          "planned_at": "2026-06-08T15:00:00",
+          "completed_at": "2026-06-08T18:19:11.469000",
+          "entered_at": "2026-06-08T16:42:31.108000",
+          "exited_at": null,
+          "dwell_mins": 96
+        }
+      ],
+      "shippers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-07T20:00:00",
+          "planned_at": "2026-06-07T20:00:00",
+          "completed_at": "2026-06-07T20:20:46.582000",
+          "entered_at": "2026-06-07T19:30:38.110000",
+          "exited_at": "2026-06-07T20:26:28.117000",
+          "dwell_mins": 26
+        }
+      ],
+      "compliance": {
+        "path": "A_already_logged",
+        "has_phone": true,
+        "has_sms": true,
+        "already_logged": true,
+        "logged_in": true,
+        "accepted": true,
+        "driver_delivered": true,
+        "close_method": "driver_self",
+        "manual_close": false,
+        "never_app": false,
+        "sms_to_login_h": null,
+        "sms_to_accept_h": 2.82
       }
     },
     {
@@ -29197,8 +29809,75 @@
         "close_method": "office_manual",
         "manual_close": true,
         "never_app": false,
-        "sms_to_login_h": null,
+        "sms_to_login_h": 140.55,
         "sms_to_accept_h": 0.02
+      }
+    },
+    {
+      "id": 1322,
+      "uniqueid": "1510 - INBOUND",
+      "date": "2026-06-05",
+      "month": "2026-06",
+      "dow": "Friday",
+      "total_spend": 6000.0,
+      "carrier": "Kahkashan Transport",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "spend_share": 6000.0,
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-09T18:00:00",
+          "planned_at": "2026-06-09T18:00:00",
+          "completed_at": "2026-06-08T19:42:03.144000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "shippers": [
+        {
+          "name": "Charles Johnson Company",
+          "address": "3800 E Lohman Ave suite d, Las Cruces, NM 88011, USA",
+          "state": "NM",
+          "city": "Las Cruces",
+          "zone": {
+            "macro": "E",
+            "macroName": "Mountain & Southwest",
+            "meso": "E2",
+            "mesoName": "Southwest"
+          },
+          "stop_date": "2026-06-05T20:00:00",
+          "planned_at": "2026-06-05T20:00:00",
+          "completed_at": "2026-06-07T14:17:21.225000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "compliance": {
+        "path": "D_no_driver",
+        "has_phone": false,
+        "has_sms": false,
+        "already_logged": false,
+        "logged_in": false,
+        "accepted": false,
+        "driver_delivered": false,
+        "close_method": "office_manual",
+        "manual_close": true,
+        "never_app": true,
+        "sms_to_login_h": null,
+        "sms_to_accept_h": null
       }
     },
     {
@@ -42010,6 +42689,73 @@
       }
     },
     {
+      "id": 1342,
+      "uniqueid": "11802",
+      "date": "2026-06-05",
+      "month": "2026-06",
+      "dow": "Friday",
+      "total_spend": 2400.0,
+      "carrier": "FMS Transport",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "EM Food",
+          "address": "4901 Glenwood Road, Brooklyn, New York 11234, United States",
+          "spend_share": 2400.0,
+          "state": "NY",
+          "city": "Brooklyn",
+          "zone": {
+            "macro": "A",
+            "macroName": "Northeast USA",
+            "meso": "A2",
+            "mesoName": "New York City / LI"
+          },
+          "stop_date": "2026-06-06T07:00:00",
+          "planned_at": "2026-06-06T07:00:00",
+          "completed_at": "2026-06-08T10:34:04.781000",
+          "entered_at": "2026-06-06T05:20:25.219000",
+          "exited_at": "2026-06-06T19:31:08.378000",
+          "dwell_mins": 751
+        }
+      ],
+      "shippers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-05T20:00:00",
+          "planned_at": "2026-06-05T20:00:00",
+          "completed_at": "2026-06-05T21:24:38.310000",
+          "entered_at": "2026-06-05T20:33:07.299000",
+          "exited_at": "2026-06-05T21:23:02.427000",
+          "dwell_mins": 49
+        }
+      ],
+      "compliance": {
+        "path": "A_already_logged",
+        "has_phone": true,
+        "has_sms": false,
+        "already_logged": true,
+        "logged_in": true,
+        "accepted": true,
+        "driver_delivered": true,
+        "close_method": "driver_self",
+        "manual_close": false,
+        "never_app": false,
+        "sms_to_login_h": null,
+        "sms_to_accept_h": null
+      }
+    },
+    {
       "id": 884,
       "uniqueid": "11500",
       "date": "2026-04-14",
@@ -42112,6 +42858,73 @@
         "never_app": false,
         "sms_to_login_h": 0.04,
         "sms_to_accept_h": 0.09
+      }
+    },
+    {
+      "id": 1347,
+      "uniqueid": "11809",
+      "date": "2025-06-07",
+      "month": "2025-06",
+      "dow": "Saturday",
+      "total_spend": 2400.0,
+      "carrier": "FMS Transport",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "EM Food",
+          "address": "4901 Glenwood Road, Brooklyn, New York 11234, United States",
+          "spend_share": 2400.0,
+          "state": "NY",
+          "city": "Brooklyn",
+          "zone": {
+            "macro": "A",
+            "macroName": "Northeast USA",
+            "meso": "A2",
+            "mesoName": "New York City / LI"
+          },
+          "stop_date": "2026-06-08T03:00:00",
+          "planned_at": "2026-06-08T03:00:00",
+          "completed_at": "2026-06-08T05:03:22.494000",
+          "entered_at": "2026-06-08T03:14:15.748000",
+          "exited_at": null,
+          "dwell_mins": 109
+        }
+      ],
+      "shippers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2025-06-07T18:00:00",
+          "planned_at": "2025-06-07T18:00:00",
+          "completed_at": "2026-06-07T19:05:13.983000",
+          "entered_at": "2026-06-07T18:27:12.177000",
+          "exited_at": "2026-06-07T19:40:32.760000",
+          "dwell_mins": 73
+        }
+      ],
+      "compliance": {
+        "path": "A_already_logged",
+        "has_phone": true,
+        "has_sms": false,
+        "already_logged": true,
+        "logged_in": true,
+        "accepted": true,
+        "driver_delivered": true,
+        "close_method": "driver_self",
+        "manual_close": false,
+        "never_app": false,
+        "sms_to_login_h": null,
+        "sms_to_accept_h": null
       }
     },
     {
@@ -45483,6 +46296,111 @@
         "driver_delivered": false,
         "close_method": "office_manual",
         "manual_close": true,
+        "never_app": false,
+        "sms_to_login_h": null,
+        "sms_to_accept_h": null
+      }
+    },
+    {
+      "id": 1350,
+      "uniqueid": "11815",
+      "date": "2026-06-06",
+      "month": "2026-06",
+      "dow": "Saturday",
+      "total_spend": 2400.0,
+      "carrier": "FMS Transport",
+      "trip_type": "LTL",
+      "picks_count": 1,
+      "drops_count": 3,
+      "customers": [
+        {
+          "name": "Jerry Porricelli",
+          "address": "Hunts Point Terminal Market, Bronx, New York 10474, United States",
+          "spend_share": 800.0,
+          "state": "NY",
+          "city": "Bronx",
+          "zone": {
+            "macro": "A",
+            "macroName": "Northeast USA",
+            "meso": "A2",
+            "mesoName": "New York City / LI"
+          },
+          "stop_date": "2026-06-07T12:00:00",
+          "planned_at": "2026-06-07T12:00:00",
+          "completed_at": "2026-06-08T01:27:08.328000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        },
+        {
+          "name": "Riviera",
+          "address": "205 Jackson Street, Englewood, New Jersey 07631, United States",
+          "spend_share": 800.0,
+          "state": "NJ",
+          "city": "Englewood",
+          "zone": {
+            "macro": "A",
+            "macroName": "Northeast USA",
+            "meso": "A4",
+            "mesoName": "North Jersey"
+          },
+          "stop_date": "2026-06-07T15:00:00",
+          "planned_at": "2026-06-07T15:00:00",
+          "completed_at": "2026-06-08T03:39:29.309000",
+          "entered_at": "2026-06-08T02:58:29.355000",
+          "exited_at": "2026-06-08T03:48:38.367000",
+          "dwell_mins": 50
+        },
+        {
+          "name": "Freshline Produce",
+          "address": "200 Corporate Dr, Mahwah, NJ 07430, USA",
+          "spend_share": 800.0,
+          "state": "NJ",
+          "city": "Mahwah",
+          "zone": {
+            "macro": "A",
+            "macroName": "Northeast USA",
+            "meso": "A4",
+            "mesoName": "North Jersey"
+          },
+          "stop_date": "2026-06-07T16:00:00",
+          "planned_at": "2026-06-07T16:00:00",
+          "completed_at": "2026-06-08T13:40:18.078000",
+          "entered_at": "2026-06-07T07:33:00.464000",
+          "exited_at": "2026-06-07T07:33:49.372000",
+          "dwell_mins": 0
+        }
+      ],
+      "shippers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-06T08:00:00",
+          "planned_at": "2026-06-06T08:00:00",
+          "completed_at": "2026-06-06T23:35:58.490000",
+          "entered_at": "2026-06-06T22:41:07.495000",
+          "exited_at": "2026-06-06T23:44:15.386000",
+          "dwell_mins": 63
+        }
+      ],
+      "compliance": {
+        "path": "A_already_logged",
+        "has_phone": true,
+        "has_sms": false,
+        "already_logged": true,
+        "logged_in": true,
+        "accepted": true,
+        "driver_delivered": true,
+        "close_method": "driver_self",
+        "manual_close": false,
         "never_app": false,
         "sms_to_login_h": null,
         "sms_to_accept_h": null
@@ -50107,6 +51025,73 @@
       }
     },
     {
+      "id": 1328,
+      "uniqueid": "1512 - INBOUND",
+      "date": "2026-06-05",
+      "month": "2026-06",
+      "dow": "Friday",
+      "total_spend": 4750.0,
+      "carrier": "Groupe Robert",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "spend_share": 4750.0,
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-08T12:00:00",
+          "planned_at": "2026-06-08T12:00:00",
+          "completed_at": "2026-06-08T18:50:04.527000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "shippers": [
+        {
+          "name": "Willoughby Farm",
+          "address": "12899 Co Rd 8, Gordon, AL 36343, USA",
+          "state": "AL",
+          "city": "Gordon",
+          "zone": {
+            "macro": "D",
+            "macroName": "South & Plains USA",
+            "meso": "D1",
+            "mesoName": "Deep South"
+          },
+          "stop_date": "2026-06-05T19:00:00",
+          "planned_at": "2026-06-05T19:00:00",
+          "completed_at": "2026-06-08T13:00:23.223000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "compliance": {
+        "path": "C_sms_no_response",
+        "has_phone": true,
+        "has_sms": true,
+        "already_logged": false,
+        "logged_in": false,
+        "accepted": false,
+        "driver_delivered": false,
+        "close_method": "office_auto",
+        "manual_close": true,
+        "never_app": false,
+        "sms_to_login_h": null,
+        "sms_to_accept_h": null
+      }
+    },
+    {
       "id": 479,
       "uniqueid": "11125",
       "date": "2026-02-24",
@@ -53327,6 +54312,73 @@
       }
     },
     {
+      "id": 1327,
+      "uniqueid": "1511 - INBOUND",
+      "date": "2026-06-04",
+      "month": "2026-06",
+      "dow": "Thursday",
+      "total_spend": 4750.0,
+      "carrier": "Groupe Robert",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "spend_share": 4750.0,
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-07T12:00:00",
+          "planned_at": "2026-06-07T12:00:00",
+          "completed_at": "2026-06-08T12:48:44.423000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "shippers": [
+        {
+          "name": "Willoughby Farm",
+          "address": "12899 Co Rd 8, Gordon, AL 36343, USA",
+          "state": "AL",
+          "city": "Gordon",
+          "zone": {
+            "macro": "D",
+            "macroName": "South & Plains USA",
+            "meso": "D1",
+            "mesoName": "Deep South"
+          },
+          "stop_date": "2026-06-04T19:00:00",
+          "planned_at": "2026-06-04T19:00:00",
+          "completed_at": "2026-06-05T13:20:59.275000",
+          "entered_at": "2026-06-04T20:18:08.063000",
+          "exited_at": "2026-06-04T22:45:31.070000",
+          "dwell_mins": 147
+        }
+      ],
+      "compliance": {
+        "path": "B_sms_logged",
+        "has_phone": true,
+        "has_sms": true,
+        "already_logged": false,
+        "logged_in": true,
+        "accepted": true,
+        "driver_delivered": false,
+        "close_method": "office_manual",
+        "manual_close": true,
+        "never_app": false,
+        "sms_to_login_h": 0.04,
+        "sms_to_accept_h": 0.1
+      }
+    },
+    {
       "id": 682,
       "uniqueid": "11332",
       "date": "2026-03-23",
@@ -54907,6 +55959,73 @@
         "driver_delivered": false,
         "close_method": "office_auto",
         "manual_close": true,
+        "never_app": false,
+        "sms_to_login_h": null,
+        "sms_to_accept_h": null
+      }
+    },
+    {
+      "id": 1351,
+      "uniqueid": "11812",
+      "date": "2026-06-07",
+      "month": "2026-06",
+      "dow": "Sunday",
+      "total_spend": 2400.0,
+      "carrier": "FMS Transport",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "Adam's Apple",
+          "address": "2558 N Jerusalem Rd, North Bellmore, NY 11710, USA",
+          "spend_share": 2400.0,
+          "state": "NY",
+          "city": "North Bellmore",
+          "zone": {
+            "macro": "A",
+            "macroName": "Northeast USA",
+            "meso": "A2",
+            "mesoName": "New York City / LI"
+          },
+          "stop_date": "2026-06-08T12:00:00",
+          "planned_at": "2026-06-08T12:00:00",
+          "completed_at": "2026-06-08T13:39:24.513000",
+          "entered_at": "2026-06-08T00:53:32.923000",
+          "exited_at": null,
+          "dwell_mins": 99
+        }
+      ],
+      "shippers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-07T19:30:00",
+          "planned_at": "2026-06-07T19:30:00",
+          "completed_at": "2026-06-07T16:55:42.540000",
+          "entered_at": "2026-06-07T16:44:57.117000",
+          "exited_at": "2026-06-07T17:32:02.662000",
+          "dwell_mins": 0
+        }
+      ],
+      "compliance": {
+        "path": "A_already_logged",
+        "has_phone": true,
+        "has_sms": false,
+        "already_logged": true,
+        "logged_in": true,
+        "accepted": true,
+        "driver_delivered": true,
+        "close_method": "driver_self",
+        "manual_close": false,
         "never_app": false,
         "sms_to_login_h": null,
         "sms_to_accept_h": null
@@ -56533,6 +57652,73 @@
         "close_method": "office_auto",
         "manual_close": true,
         "never_app": false,
+        "sms_to_login_h": null,
+        "sms_to_accept_h": null
+      }
+    },
+    {
+      "id": 1319,
+      "uniqueid": "1508 - INBOUND",
+      "date": "2026-06-05",
+      "month": "2026-06",
+      "dow": "Friday",
+      "total_spend": 6000.0,
+      "carrier": "Kahkashan Transport",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "spend_share": 6000.0,
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-09T18:00:00",
+          "planned_at": "2026-06-09T18:00:00",
+          "completed_at": "2026-06-09T16:04:46.882000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "shippers": [
+        {
+          "name": "Charles Johnson Company",
+          "address": "3800 E Lohman Ave suite d, Las Cruces, NM 88011, USA",
+          "state": "NM",
+          "city": "Las Cruces",
+          "zone": {
+            "macro": "E",
+            "macroName": "Mountain & Southwest",
+            "meso": "E2",
+            "mesoName": "Southwest"
+          },
+          "stop_date": "2026-06-05T20:00:00",
+          "planned_at": "2026-06-05T20:00:00",
+          "completed_at": "2026-06-07T14:17:17.401000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "compliance": {
+        "path": "D_no_driver",
+        "has_phone": false,
+        "has_sms": false,
+        "already_logged": false,
+        "logged_in": false,
+        "accepted": false,
+        "driver_delivered": false,
+        "close_method": "office_manual",
+        "manual_close": true,
+        "never_app": true,
         "sms_to_login_h": null,
         "sms_to_accept_h": null
       }
@@ -61245,6 +62431,73 @@
         "never_app": false,
         "sms_to_login_h": null,
         "sms_to_accept_h": null
+      }
+    },
+    {
+      "id": 1329,
+      "uniqueid": "1513 - INBOUND",
+      "date": "2026-06-05",
+      "month": "2026-06",
+      "dow": "Friday",
+      "total_spend": 4300.0,
+      "carrier": "Mo ov",
+      "trip_type": "TL",
+      "picks_count": 1,
+      "drops_count": 1,
+      "customers": [
+        {
+          "name": "FMS - Sherrington",
+          "address": "298 Rang Sainte-M\u00e9lanie, Sherrington, Quebec J0L 2N0, Canada",
+          "spend_share": 4300.0,
+          "state": "QC",
+          "city": "Sherrington",
+          "zone": {
+            "macro": "G",
+            "macroName": "Canada East",
+            "meso": "G1",
+            "mesoName": "Quebec"
+          },
+          "stop_date": "2026-06-08T16:00:00",
+          "planned_at": "2026-06-08T16:00:00",
+          "completed_at": "2026-06-08T12:58:48.797000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "shippers": [
+        {
+          "name": "MEL-CAB PRODUCE",
+          "address": "1116 Ben Baker Rd, Norman Park, GA 31771, USA",
+          "state": "GA",
+          "city": "Norman Park",
+          "zone": {
+            "macro": "B",
+            "macroName": "Mid-Atlantic & Southeast",
+            "meso": "B4",
+            "mesoName": "Georgia"
+          },
+          "stop_date": "2026-06-05T18:00:00",
+          "planned_at": "2026-06-05T18:00:00",
+          "completed_at": "2026-06-05T19:41:32.254000",
+          "entered_at": null,
+          "exited_at": null,
+          "dwell_mins": null
+        }
+      ],
+      "compliance": {
+        "path": "B_sms_logged",
+        "has_phone": true,
+        "has_sms": true,
+        "already_logged": false,
+        "logged_in": true,
+        "accepted": true,
+        "driver_delivered": false,
+        "close_method": "office_manual",
+        "manual_close": true,
+        "never_app": false,
+        "sms_to_login_h": 5.7,
+        "sms_to_accept_h": 5.71
       }
     },
     {
@@ -73081,10 +74334,10 @@
   ],
   "active_loads": [
     {
-      "id": 1333,
-      "uniqueid": "1517 - INBOUND",
+      "id": 1359,
+      "uniqueid": "1522- INBOUND",
       "status": 0,
-      "carrier": "Rig Logistics INC",
+      "carrier": "KTR Transport",
       "trip_type": "TL",
       "picks_count": 0,
       "drops_count": 0,
@@ -73094,7 +74347,7 @@
     {
       "id": 1335,
       "uniqueid": "1519 - INBOUND",
-      "status": 0,
+      "status": 4,
       "carrier": "Groupe Robert",
       "trip_type": "TL",
       "picks_count": 0,
@@ -73103,10 +74356,10 @@
       "shippers": []
     },
     {
-      "id": 1302,
-      "uniqueid": "1504 - INBOUND",
+      "id": 1362,
+      "uniqueid": "11728",
       "status": 1,
-      "carrier": "Groupe Robert",
+      "carrier": "Rig Logistics INC",
       "trip_type": "TL",
       "picks_count": 0,
       "drops_count": 0,
@@ -73114,8 +74367,19 @@
       "shippers": []
     },
     {
-      "id": 1349,
-      "uniqueid": "11811",
+      "id": 1363,
+      "uniqueid": "11808",
+      "status": 1,
+      "carrier": "Kahkashan Transport",
+      "trip_type": "TL",
+      "picks_count": 0,
+      "drops_count": 0,
+      "customers": [],
+      "shippers": []
+    },
+    {
+      "id": 1370,
+      "uniqueid": "11829",
       "status": 4,
       "carrier": "FMS Transport",
       "trip_type": "TL",
@@ -73125,10 +74389,10 @@
       "shippers": []
     },
     {
-      "id": 1323,
-      "uniqueid": "1509 - INBOUND",
+      "id": 1371,
+      "uniqueid": "11820",
       "status": 4,
-      "carrier": "SPI",
+      "carrier": "FMS Transport",
       "trip_type": "TL",
       "picks_count": 0,
       "drops_count": 0,
@@ -73136,8 +74400,96 @@
       "shippers": []
     },
     {
-      "id": 1343,
-      "uniqueid": "1520- INBOUND",
+      "id": 1365,
+      "uniqueid": "11817",
+      "status": 4,
+      "carrier": "FMS Transport",
+      "trip_type": "TL",
+      "picks_count": 0,
+      "drops_count": 0,
+      "customers": [],
+      "shippers": []
+    },
+    {
+      "id": 1367,
+      "uniqueid": "11816",
+      "status": 1,
+      "carrier": "S & S Forwarding Ltd",
+      "trip_type": "TL",
+      "picks_count": 0,
+      "drops_count": 0,
+      "customers": [],
+      "shippers": []
+    },
+    {
+      "id": 1366,
+      "uniqueid": "11827",
+      "status": 4,
+      "carrier": "FMS Transport",
+      "trip_type": "TL",
+      "picks_count": 0,
+      "drops_count": 0,
+      "customers": [],
+      "shippers": []
+    },
+    {
+      "id": 1368,
+      "uniqueid": "11833",
+      "status": 4,
+      "carrier": "Load Flow Trucklines",
+      "trip_type": "TL",
+      "picks_count": 0,
+      "drops_count": 0,
+      "customers": [],
+      "shippers": []
+    },
+    {
+      "id": 1369,
+      "uniqueid": "11831",
+      "status": 0,
+      "carrier": "Rig Logistics INC",
+      "trip_type": "TL",
+      "picks_count": 0,
+      "drops_count": 0,
+      "customers": [],
+      "shippers": []
+    },
+    {
+      "id": 1372,
+      "uniqueid": "11826",
+      "status": 4,
+      "carrier": "FMS Transport",
+      "trip_type": "TL",
+      "picks_count": 0,
+      "drops_count": 0,
+      "customers": [],
+      "shippers": []
+    },
+    {
+      "id": 1373,
+      "uniqueid": "1526 - INBOUND",
+      "status": 0,
+      "carrier": "Rig Logistics INC",
+      "trip_type": "TL",
+      "picks_count": 0,
+      "drops_count": 0,
+      "customers": [],
+      "shippers": []
+    },
+    {
+      "id": 1375,
+      "uniqueid": "1528 - INBOUND",
+      "status": 0,
+      "carrier": "Rig Logistics INC",
+      "trip_type": "TL",
+      "picks_count": 0,
+      "drops_count": 0,
+      "customers": [],
+      "shippers": []
+    },
+    {
+      "id": 1374,
+      "uniqueid": "1527 - INBOUND",
       "status": 0,
       "carrier": "Rig Logistics INC",
       "trip_type": "TL",
@@ -73150,7 +74502,7 @@
       "id": 1344,
       "uniqueid": "1521 - INBOUND",
       "status": 0,
-      "carrier": "Unknown",
+      "carrier": "KTR Transport",
       "trip_type": "TL",
       "picks_count": 0,
       "drops_count": 0,
@@ -73158,32 +74510,10 @@
       "shippers": []
     },
     {
-      "id": 1345,
-      "uniqueid": "11804",
+      "id": 1343,
+      "uniqueid": "1520- INBOUND",
       "status": 4,
-      "carrier": "Load Flow Trucklines",
-      "trip_type": "TL",
-      "picks_count": 0,
-      "drops_count": 0,
-      "customers": [],
-      "shippers": []
-    },
-    {
-      "id": 1348,
-      "uniqueid": "11810",
-      "status": 4,
-      "carrier": "Transport VM",
-      "trip_type": "TL",
-      "picks_count": 0,
-      "drops_count": 0,
-      "customers": [],
-      "shippers": []
-    },
-    {
-      "id": 1322,
-      "uniqueid": "1510 - INBOUND",
-      "status": 0,
-      "carrier": "Kahkashan Transport",
+      "carrier": "Rig Logistics INC",
       "trip_type": "TL",
       "picks_count": 0,
       "drops_count": 0,
@@ -73195,94 +74525,6 @@
       "uniqueid": "1514 - INBOUND",
       "status": 4,
       "carrier": "Cargo Solutions",
-      "trip_type": "TL",
-      "picks_count": 0,
-      "drops_count": 0,
-      "customers": [],
-      "shippers": []
-    },
-    {
-      "id": 1347,
-      "uniqueid": "11809",
-      "status": 4,
-      "carrier": "FMS Transport",
-      "trip_type": "TL",
-      "picks_count": 0,
-      "drops_count": 0,
-      "customers": [],
-      "shippers": []
-    },
-    {
-      "id": 1342,
-      "uniqueid": "11802",
-      "status": 4,
-      "carrier": "FMS Transport",
-      "trip_type": "TL",
-      "picks_count": 0,
-      "drops_count": 0,
-      "customers": [],
-      "shippers": []
-    },
-    {
-      "id": 1350,
-      "uniqueid": "11815",
-      "status": 4,
-      "carrier": "FMS Transport",
-      "trip_type": "TL",
-      "picks_count": 0,
-      "drops_count": 0,
-      "customers": [],
-      "shippers": []
-    },
-    {
-      "id": 1328,
-      "uniqueid": "1512 - INBOUND",
-      "status": 1,
-      "carrier": "Groupe Robert",
-      "trip_type": "TL",
-      "picks_count": 0,
-      "drops_count": 0,
-      "customers": [],
-      "shippers": []
-    },
-    {
-      "id": 1327,
-      "uniqueid": "1511 - INBOUND",
-      "status": 4,
-      "carrier": "Groupe Robert",
-      "trip_type": "TL",
-      "picks_count": 0,
-      "drops_count": 0,
-      "customers": [],
-      "shippers": []
-    },
-    {
-      "id": 1351,
-      "uniqueid": "11812",
-      "status": 4,
-      "carrier": "FMS Transport",
-      "trip_type": "TL",
-      "picks_count": 0,
-      "drops_count": 0,
-      "customers": [],
-      "shippers": []
-    },
-    {
-      "id": 1319,
-      "uniqueid": "1508 - INBOUND",
-      "status": 0,
-      "carrier": "Kahkashan Transport",
-      "trip_type": "TL",
-      "picks_count": 0,
-      "drops_count": 0,
-      "customers": [],
-      "shippers": []
-    },
-    {
-      "id": 1329,
-      "uniqueid": "1513 - INBOUND",
-      "status": 4,
-      "carrier": "Mo ov",
       "trip_type": "TL",
       "picks_count": 0,
       "drops_count": 0,
@@ -73306,12 +74548,12 @@
       {
         "carrier": "S & S Forwarding Ltd",
         "expiry": "2026-02-03",
-        "loads": 30
+        "loads": 31
       },
       {
         "carrier": "Load Flow Trucklines",
         "expiry": "2026-02-04",
-        "loads": 21
+        "loads": 22
       },
       {
         "carrier": "Traffic Tech",
@@ -73319,13 +74561,13 @@
         "loads": 21
       },
       {
-        "carrier": "GS LINER Transport",
-        "expiry": "2026-02-06",
-        "loads": 14
-      },
-      {
         "carrier": "Transport AJIT",
         "expiry": "2026-03-06",
+        "loads": 15
+      },
+      {
+        "carrier": "GS LINER Transport",
+        "expiry": "2026-02-06",
         "loads": 14
       },
       {
@@ -73349,6 +74591,11 @@
         "loads": 8
       },
       {
+        "carrier": "Groupe Robert",
+        "expiry": "2026-02-20",
+        "loads": 6
+      },
+      {
         "carrier": "7994281/ Lucian",
         "expiry": "2026-02-11",
         "loads": 5
@@ -73362,11 +74609,6 @@
         "carrier": "CH Camroutes INC",
         "expiry": "2026-02-04",
         "loads": 4
-      },
-      {
-        "carrier": "Groupe Robert",
-        "expiry": "2026-02-20",
-        "loads": 3
       },
       {
         "carrier": "RBR EXPRESS INC",
@@ -73548,7 +74790,7 @@
       {
         "carrier": "Rig Logistics INC",
         "expiry": "2026-07-01",
-        "loads": 34
+        "loads": 35
       },
       {
         "carrier": "Elevated Freight Solution",
@@ -73561,14 +74803,14 @@
         "loads": 22
       },
       {
+        "carrier": "Kahkashan Transport",
+        "expiry": "2026-07-22",
+        "loads": 15
+      },
+      {
         "carrier": "Cargo Solutions",
         "expiry": "2026-06-01",
         "loads": 14
-      },
-      {
-        "carrier": "Kahkashan Transport",
-        "expiry": "2026-07-22",
-        "loads": 13
       },
       {
         "carrier": "North Plus Nexus INC",

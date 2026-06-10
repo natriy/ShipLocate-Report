@@ -19,9 +19,13 @@ DB_NAME=postgres
 DB_USER=shiplocate
 DB_PASSWORD=your_password
 ```
-Run the data extraction script to query the database, perform cleaning/normalization, and generate `reports-frontend/src/lib/real-data.json`:
+Run the data extraction script to query the database (or fall back to local JSON arrays in `database-json/` if database connection parameters are missing), perform cleaning/normalization, and generate `reports-frontend/src/lib/real-data.json`:
 ```bash
+# By default, filters for FMS Fresh Produce (organizationid = 2)
 python prepare_frontend_data.py
+
+# To generate report data for a different organization (e.g., organizationid = 5)
+ORG_ID=5 python prepare_frontend_data.py
 ```
 
 ### 2. Start Local React Development Server
