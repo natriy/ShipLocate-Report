@@ -102,6 +102,27 @@ This dashboard is designed to run in a multi-tenant environment. When integratin
 
 ---
 
+### 💻 Frontend Architecture & Client-Side Aggregation
+
+The React frontend utilizes **React 19**, **Tailwind CSS v4 (with `@tailwindcss/vite` compiler)**, and **Recharts** for visualizations.
+
+#### 1. State Flow and Calculations
+- **`App.tsx`** is the master coordinator. It imports the raw payload (`real-data.json` or live REST response) and performs the date filtering, range selection, and metrics calculations inside a single memoized function `getAggregatedData`.
+- The aggregated metrics (`carrMap`, `custMap`, `zonesMap`, `lanesMap`, `globalCompliance`, etc.) are passed down as props to the modular tab components in `src/components/`.
+
+#### 2. Scaling Recommendation (API vs Client-Side)
+- **Small-to-Medium Tenants**: Keeping aggregation client-side is ideal since it enables instant filtering by date range, switching currencies, and checking concentrations in milliseconds without hitting the database.
+- **Enterprise-Scale Tenants**: If a tenant has tens of thousands of loads, loading all load records onto the client will impact performance. The developer should refactor the data flow to move these aggregation functions (`getAggregatedData` logic) to backend database queries (e.g. running Group By aggregations directly in Postgres) and load tab-specific data on-demand.
+
+#### 3. Currency Conversion (USD ➔ CAD)
+- All spend values in the database should be logged in a base currency (typically USD).
+- The frontend supports a dynamic exchange rate switch (e.g. 1.36 CAD/USD). When CAD is selected, `App.tsx` automatically scales all spend shares client-side. The API endpoint does not need to return CAD converted values.
+
+#### 4. Year-over-Year (YoY) Comparison Logic
+- YoY comparison metrics (rendered on the Overview tab) are computed dynamically by calling `getAggregatedData` on the same date range shifted back by the offset years (e.g. `startDate.year - offset`).
+
+---
+
 ### 🗄️ Database Schema & Entities
 
 The dashboard aggregates metrics from the following core PostgreSQL tables:
