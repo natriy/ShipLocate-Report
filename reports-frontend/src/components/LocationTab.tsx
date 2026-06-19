@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import { cn } from '@/lib/utils';
-import { Search, X, Package, Activity, MapPin, Map, Filter, Plus, Minus, ArrowDownToLine, ArrowUpFromLine, Clock, Copy, Check, Info, Truck } from 'lucide-react';
+import { cn, exportToCSV } from '@/lib/utils';
+import { Search, X, Package, Activity, MapPin, Map, Filter, Plus, Minus, ArrowDownToLine, ArrowUpFromLine, Clock, Copy, Check, Info, Truck, Download } from 'lucide-react';
 import InteractiveMap from './InteractiveMap';
 import mapData from '../assets/usa-canada-map.json';
 
@@ -492,6 +492,40 @@ export default function LocationTab({ customers, shippers, loads_raw, isDark = f
           >
             <Map size={13} />
             <span>Map</span>
+          </button>
+
+          {/* Export Button */}
+          <button
+            onClick={() => {
+              const headers = [
+                viewMode === 'deliveries' ? 'Receiver (Customer) Name' : 'Shipper Name',
+                'Zone/Country',
+                'Loads Count',
+                'OTD % (On-Time Delivery)',
+                'Avg Delay (h)',
+                'Avg Dwell Time (min)',
+                'Detention Risk %',
+                'TL (Single) Loads',
+                'LTL (Multi) Loads'
+              ];
+              const keys = [
+                'name',
+                'zone',
+                'loads',
+                'otd_percent',
+                'otd_avg_delay',
+                'avg_dwell_mins',
+                'detention_risk',
+                'tl',
+                'ltl'
+              ];
+              exportToCSV(filteredAndSorted, headers, keys, viewMode === 'deliveries' ? 'receivers_report' : 'shippers_report');
+            }}
+            className="flex items-center gap-1.5 bg-card hover:bg-muted text-foreground border border-border px-3.5 py-1.5 rounded-full text-xs font-black transition-all cursor-pointer shadow-xs select-none shrink-0"
+            title="Download locations report as CSV"
+          >
+            <Download className="w-3.5 h-3.5 text-muted-foreground" />
+            <span>Export CSV</span>
           </button>
 
           {/* Segmented toggle */}

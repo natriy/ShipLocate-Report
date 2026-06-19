@@ -98,7 +98,31 @@ export default function App() {
     }
   }, [theme]);
 
-  const { loads } = realData as any;
+  const [dashboardData, setDashboardData] = useState<any>(realData);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch('/api/v1/reports/dashboard');
+        if (response.ok) {
+          const json = await response.json();
+          if (json && json.loads) {
+            setDashboardData(json);
+            console.log("Successfully fetched dashboard metrics from live API.");
+          }
+        }
+      } catch (err) {
+        console.log("Backend API not reachable, falling back to static real-data.json payload.");
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, []);
+
+  const { loads } = dashboardData as any;
   const loads_raw: any[] = loads || [];
 
   // ─── Default range: last 6 months ───
@@ -932,11 +956,16 @@ export default function App() {
       const phone_assigned_rate = totalComp > 0 ? (comp.has_phone / totalComp) * 100 : 0;
       const avg_sms_to_login = comp.sms_to_login_count > 0 ? (comp.sms_to_login_sum / comp.sms_to_login_count) : null;
 
+      const otaPercentVal = (c.arr_eligible || 0) > 0 ? ((c.arr_ontime || 0) / c.arr_eligible) * 100 : 100;
+      const otdPercentVal = eligible > 0 ? (ontime / eligible) * 100 : 100;
+      const performanceScore = Math.round((otdPercentVal * 0.6) + (otaPercentVal * 0.4));
+
       return {
         ...c,
         avg: c.loads > 0 ? Math.round(c.spend / c.loads) : 0,
         customer_count: Object.keys(c.customers).length,
         rate: eligible > 0 ? Math.round(otdPercent * 10) / 10 : 100,
+        performance_score: performanceScore,
         otd_eligible: eligible,
         otd_ontime: ontime,
         otd_percent: eligible > 0 ? Math.round(otdPercent * 10) / 10 : 100,
@@ -1605,7 +1634,7 @@ export default function App() {
               customers={primaryData.customers}
               zones={primaryData.zones}
               loads_raw={primaryData.filtered}
-              insurance={realData.insurance}
+              insurance={dashboardData.insurance}
             />
           )}
         </div>

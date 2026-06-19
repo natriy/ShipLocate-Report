@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { cn } from '@/lib/utils';
+import { cn, exportToCSV } from '@/lib/utils';
 import {
   Clock,
   AlertTriangle,
@@ -12,7 +12,8 @@ import {
   MapPin,
   Calendar,
   Sparkles,
-  Info
+  Info,
+  Download
 } from 'lucide-react';
 import {
   ResponsiveContainer,
@@ -438,16 +439,38 @@ export default function TransitTab({
             </div>
           </div>
 
-          {/* Search bar */}
-          <div className="relative w-full sm:w-64">
-            <Search size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground" />
-            <input
-              type="text"
-              placeholder={activeAuditTab === 'carriers' ? "Search carrier..." : "Search lane cities/customers..."}
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-4 py-1.5 bg-muted/50 border border-border rounded-xl text-xs font-semibold focus:outline-hidden focus:border-brand-green transition-all"
-            />
+          {/* Search & Export controls */}
+          <div className="flex items-center gap-3 w-full sm:w-auto">
+            <div className="relative w-full sm:w-64">
+              <Search size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground" />
+              <input
+                type="text"
+                placeholder={activeAuditTab === 'carriers' ? "Search carrier..." : "Search lane cities/customers..."}
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-9 pr-4 py-1.5 bg-muted/50 border border-border rounded-xl text-xs font-semibold focus:outline-hidden focus:border-brand-green transition-all"
+              />
+            </div>
+
+            {/* Export Button */}
+            <button
+              onClick={() => {
+                if (activeAuditTab === 'carriers') {
+                  const headers = ['Carrier Name', 'Loads Count', 'OTA %', 'Avg Arrival Delay (h)', 'OTD %', 'Avg OTD Delay (h)', 'Avg Dwell (min)', 'Detention Risk %'];
+                  const keys = ['name', 'loads', 'ota_percent', 'avg_arr_delay', 'otd_percent', 'otd_avg_delay', 'avg_dwell_mins', 'detention_risk'];
+                  exportToCSV(filteredCarriers, headers, keys, 'transit_carriers_audit');
+                } else {
+                  const headers = ['Route (Lane)', 'Loads Count', 'OTA %', 'Avg Arrival Delay (h)', 'OTD %', 'Avg OTD Delay (h)', 'Avg Dwell (min)', 'Detention Risk %'];
+                  const keys = ['to_zone', 'loads', 'ota_percent', 'avg_arr_delay', 'otd_percent', 'otd_avg_delay', 'avg_dwell_mins', 'detention_risk'];
+                  exportToCSV(filteredLanes, headers, keys, 'transit_lanes_audit');
+                }
+              }}
+              className="flex items-center gap-1.5 bg-card hover:bg-muted text-foreground border border-border px-3.5 py-1.5 rounded-full text-xs font-black transition-all cursor-pointer shadow-xs select-none shrink-0"
+              title="Download transit audit report as CSV"
+            >
+              <Download className="w-3.5 h-3.5 text-muted-foreground" />
+              <span>Export CSV</span>
+            </button>
           </div>
         </div>
 

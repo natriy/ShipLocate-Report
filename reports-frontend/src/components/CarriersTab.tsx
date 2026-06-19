@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import { cn } from '@/lib/utils';
-import { Search, X, Truck, Package, DollarSign, Activity, MapPin, Users, CheckCircle, Plus, Minus, Clock, Info } from 'lucide-react';
+import { cn, exportToCSV } from '@/lib/utils';
+import { Search, X, Truck, Package, DollarSign, Activity, MapPin, Users, CheckCircle, Plus, Minus, Clock, Info, Download } from 'lucide-react';
 import InteractiveMap from './InteractiveMap';
 import mapData from '../assets/usa-canada-map.json';
 
@@ -17,7 +17,7 @@ const formatNumber = (val: number) => val.toLocaleString();
 const SH = "text-[10px] uppercase tracking-wider font-black text-muted-foreground";
 const TH = `cursor-pointer px-5 py-3 ${SH} hover:text-brand-slate transition-colors select-none`;
 
-type SortKey = 'name' | 'loads' | 'single' | 'multi' | 'stops' | 'customer_count' | 'otd_percent' | 'otd_avg_delay';
+type SortKey = 'name' | 'loads' | 'single' | 'multi' | 'stops' | 'customer_count' | 'otd_percent' | 'otd_avg_delay' | 'performance_score';
 
 export default function CarriersTab({ carriers, loads_raw, isDark = false, currency = 'USD' }: CarriersTabProps) {
   const formatCurrency = (val: number | null) => {
@@ -289,6 +289,20 @@ export default function CarriersTab({ carriers, loads_raw, isDark = false, curre
               onChange={e => setSearch(e.target.value)}
             />
           </div>
+
+          {/* Export Button */}
+          <button
+            onClick={() => {
+              const headers = ['Carrier Name', 'Loads', 'OTD %', 'Avg OTD Delay (h)', 'Performance Score', 'TL (Single) Loads', 'LTL (Multi) Loads', 'Stops Count', 'Distinct Customers'];
+              const keys = ['name', 'loads', 'otd_percent', 'otd_avg_delay', 'performance_score', 'single', 'multi', 'stops', 'customer_count'];
+              exportToCSV(filteredAndSorted, headers, keys, 'carriers_report');
+            }}
+            className="flex items-center gap-1.5 bg-card hover:bg-muted text-foreground border border-border px-3.5 py-1.5 rounded-full text-xs font-black transition-all cursor-pointer shadow-xs select-none shrink-0"
+            title="Download carriers scorecard report as CSV"
+          >
+            <Download className="w-3.5 h-3.5 text-muted-foreground" />
+            <span>Export CSV</span>
+          </button>
         </div>
       </div>
 
@@ -314,6 +328,13 @@ export default function CarriersTab({ carriers, loads_raw, isDark = false, curre
                       <span>Loads</span>
                       {renderSortArrow('loads')}
                       {renderTooltip('Total loads transported by this carrier', 'center')}
+                    </div>
+                  </th>
+                  <th onClick={() => handleSort('performance_score')} className={`${TH} text-right`}>
+                    <div className="flex items-center justify-end gap-1">
+                      <span>Score</span>
+                      {renderSortArrow('performance_score')}
+                      {renderTooltip('Combined performance score (60% OTD + 40% OTA)', 'center')}
                     </div>
                   </th>
                   <th onClick={() => handleSort('otd_percent')} className={`${TH} text-right`}>
@@ -378,6 +399,18 @@ export default function CarriersTab({ carriers, loads_raw, isDark = false, curre
                         <div className="text-[10px] text-muted-foreground mt-0.5">{row.top_zone || 'Unknown zone'}</div>
                       </td>
                       <td className="px-5 py-4 text-right tabular-nums font-black text-brand-navy">{formatNumber(row.loads)}</td>
+                      <td className="px-5 py-4 text-right tabular-nums">
+                        <span className={cn(
+                          "font-black text-xs px-2 py-0.5 rounded-full inline-block min-w-[32px] text-center",
+                          row.performance_score >= 85
+                            ? "bg-emerald-500/15 text-emerald-500"
+                            : row.performance_score >= 70
+                            ? "bg-amber-500/15 text-amber-500"
+                            : "bg-rose-500/15 text-rose-500"
+                        )}>
+                          {row.performance_score}
+                        </span>
+                      </td>
                       <td className="px-5 py-4 text-right tabular-nums">
                         {row.otd_eligible > 0 ? (
                           <span className={cn(

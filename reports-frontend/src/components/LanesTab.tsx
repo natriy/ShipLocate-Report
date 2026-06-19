@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import { cn } from '@/lib/utils';
-import { Search, X, Route, DollarSign, Package, ShieldAlert, ArrowUpDown, ChevronRight, Filter, AlertTriangle, TrendingUp, TrendingDown, ArrowRight, Minus, Clock, Activity, Info } from 'lucide-react';
+import { cn, exportToCSV } from '@/lib/utils';
+import { Search, X, Route, DollarSign, Package, ShieldAlert, ArrowUpDown, ChevronRight, Filter, AlertTriangle, TrendingUp, TrendingDown, ArrowRight, Minus, Clock, Activity, Info, Download } from 'lucide-react';
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 
 interface LanesTabProps {
@@ -281,28 +281,44 @@ export default function LanesTab({ lanes, loads_raw, isDark = false, currency = 
             </div>
 
             {/* Quick Filters */}
-            <div className="flex items-center gap-1.5">
-              <span className="text-[10px] font-black uppercase tracking-wider text-muted-foreground/80 flex items-center gap-1"><Filter size={11} /> Filter:</span>
-              <div className="flex bg-muted border border-border/50 rounded-lg p-0.5 text-[10px] font-bold">
-                <button
-                  onClick={() => setFilter('all')}
-                  className={cn("px-2.5 py-1 rounded-md transition-all", filter === 'all' ? "bg-card text-foreground shadow-2xs font-extrabold" : "text-muted-foreground hover:text-foreground")}
-                >
-                  All
-                </button>
-                <button
-                  onClick={() => setFilter('single')}
-                  className={cn("px-2.5 py-1 rounded-md transition-all flex items-center gap-1", filter === 'single' ? "bg-brand-yellow/10 text-brand-yellow shadow-2xs font-extrabold" : "text-muted-foreground hover:text-brand-yellow")}
-                >
-                  Single-Source ({kpis.singleSourceLanes})
-                </button>
-                <button
-                  onClick={() => setFilter('savings')}
-                  className={cn("px-2.5 py-1 rounded-md transition-all flex items-center gap-1", filter === 'savings' ? "bg-brand-red/10 text-brand-red shadow-2xs font-extrabold" : "text-muted-foreground hover:text-brand-red")}
-                >
-                  Savings Potential
-                </button>
+            <div className="flex flex-wrap items-center gap-3">
+              <div className="flex items-center gap-1.5">
+                <span className="text-[10px] font-black uppercase tracking-wider text-muted-foreground/80 flex items-center gap-1"><Filter size={11} /> Filter:</span>
+                <div className="flex bg-muted border border-border/50 rounded-lg p-0.5 text-[10px] font-bold">
+                  <button
+                    onClick={() => setFilter('all')}
+                    className={cn("px-2.5 py-1 rounded-md transition-all", filter === 'all' ? "bg-card text-foreground shadow-2xs font-extrabold" : "text-muted-foreground hover:text-foreground")}
+                  >
+                    All
+                  </button>
+                  <button
+                    onClick={() => setFilter('single')}
+                    className={cn("px-2.5 py-1 rounded-md transition-all flex items-center gap-1", filter === 'single' ? "bg-brand-yellow/10 text-brand-yellow shadow-2xs font-extrabold" : "text-muted-foreground hover:text-brand-yellow")}
+                  >
+                    Single-Source ({kpis.singleSourceLanes})
+                  </button>
+                  <button
+                    onClick={() => setFilter('savings')}
+                    className={cn("px-2.5 py-1 rounded-md transition-all flex items-center gap-1", filter === 'savings' ? "bg-brand-red/10 text-brand-red shadow-2xs font-extrabold" : "text-muted-foreground hover:text-brand-red")}
+                  >
+                    Savings Potential
+                  </button>
+                </div>
               </div>
+
+              {/* Export Button */}
+              <button
+                onClick={() => {
+                  const headers = ['Route (Lane)', 'Loads', 'Spend', 'Avg Rate', 'Market Savings Potential', 'Active Carriers Count', 'Top Carrier'];
+                  const keys = ['key', 'loads', 'spend', 'avg_rate', 'leakage', 'carriers_count', 'top_carrier'];
+                  exportToCSV(filteredAndSorted, headers, keys, 'lanes_report');
+                }}
+                className="flex items-center gap-1.5 bg-card hover:bg-muted text-foreground border border-border px-3.5 py-1.5 rounded-full text-xs font-black transition-all cursor-pointer shadow-xs select-none shrink-0"
+                title="Download lanes seasonality report as CSV"
+              >
+                <Download className="w-3.5 h-3.5 text-muted-foreground" />
+                <span>Export CSV</span>
+              </button>
             </div>
 
           </div>

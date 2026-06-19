@@ -360,8 +360,17 @@ WHERE l.organizationid = :tenant_id;
      }
    }
    ```
-2. **Replace Static Imports**: In [App.tsx](file:///Users/renat/Desktop/ShipLocate-Reports/reports-frontend/src/App.tsx), replace:
-   ```typescript
-   import rawData from './lib/real-data.json';
-   ```
-   with standard state loading via an API call using `fetch` or `react-query`.
+2. **Dynamic API & Fallback**:
+   The frontend `App.tsx` has been pre-configured with a state-aware dynamic fetch:
+   - It attempts to fetch dashboard payload data asynchronously from `/api/v1/reports/dashboard`.
+   - If the API returns a successful response, the dashboard updates dynamically in real-time.
+   - If the API is unreachable (such as in local development), it automatically falls back to the statically imported local `real-data.json` payload, ensuring a seamless experience.
+   - The developer simply needs to deploy the backend endpoint at `/api/v1/reports/dashboard` under the same host or set up a proxy in Vite (`vite.config.ts`).
+
+3. **CSV Exporting Capability**:
+   - The Carriers, Lanes, Locations, and Transit tabs are now equipped with an **"Export CSV"** button.
+   - This trigger aggregates the currently filtered and sorted records directly in the browser and exports them into a download-ready Excel-compatible CSV format.
+
+4. **Composite Performance Score**:
+   - Carriers are now scored using a composite index: `Score = 60% OTD + 40% OTA` (rounded to the nearest integer).
+   - This score is displayed in the main carrier table, enabling instant sorting and ranking of the most reliable logistics partners.
